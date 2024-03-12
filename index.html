@@ -13,6 +13,7 @@
 
     <!-- Custom styles for this template -->
     <link href="navbar-static.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
@@ -47,10 +48,66 @@
     </nav>
 
     <main class="container">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" src="assets/img/hank.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false" />
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Get medications you need in 3 simple steps with Hank Meds™!</h1>
+            <p>It's easy to get the prescriptions you need with Hank Meds™. Just follow along the steps!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" src="assets/img/doctor.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false" />
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="text-dark">Step 1: Setup an appointment with a provider</h1>
+            <p class="text-dark">schedule an appointment with one of our providers, and get your prescription!</p>
+            <p><a class="btn btn-lg btn-primary" href="make_appointment.html">Schedule appointment</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" src="assets/img/package.webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false" />
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Step 2: Purchase your prescription subscription!</h1>
+            <p>Once you've been examined by one of our providers, we'll get your prescription subscription set up immediately and mail you your medication!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" src="assets/img/happy.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false" />
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Step 3: Take your prescription and be happy!</h1>
+            <p>It's the moment you've been waiting for! Open up that package and start your new life!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
       <div class="bg-body-tertiary p-5 rounded">
-        <h1>Navbar example</h1>
-        <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-        <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
+        <h1>Hank Meds: What Winners Use</h1>
+        <p class="lead">Thanks for visiting my code challenge. We are absolutely not affiliated with Henry Meds in any way, nor have we ever heard of them. This entire website is 100% an original idea and definitely not stolen from Henry Meds (that company that we have never heard of).</p>
+        <a href="https://shouldiuseacarousel.com/">https://shouldiuseacarousel.com/</a>
       </div>
     </main>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
