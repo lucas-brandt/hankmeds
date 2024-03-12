@@ -1,8 +1,6 @@
 <!doctype html>
   <html lang="en" data-bs-theme="auto">
   <head>
-    <script src="assets/js/color-modes.js"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -48,11 +46,25 @@
 
     <main class="container">
       <div class="bg-body-tertiary p-5 rounded">
-        <h1>Navbar example</h1>
-        <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-        <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
+        <h1>My Schedule</h1>
+        <div class="table-responsive">
+            <table class="table table-striped table-sm" id="scheduleTable">
+              <thead>
+                <tr>
+                  <th>Provider ID</th>
+                  <th>Start Time</th>
+                  <th>End Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                </tr>
+              </tbody>
+            </table>
       </div>
     </main>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/js/view_schedule.js"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
